@@ -1,6 +1,5 @@
 # H6AK Header-Only C++ Library
-趣味で作成したC++ header-only ライブラリ。コンセプトは特にない。
-C++11以上に対応。
+Here's an useless header-only library that I have developed as my hobby. The library requires C++11 or higher.
 
 ## Coding Style
-[Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) に従う。
+Following [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html).
