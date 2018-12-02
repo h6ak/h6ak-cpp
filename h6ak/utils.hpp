@@ -9,6 +9,8 @@
 
 namespace h6ak {
 
+namespace utils_ { // to avoid ADL
+
 // like Python len function
 template <class T>
 std::size_t len(T obj) { return obj.size(); }
@@ -21,6 +23,10 @@ bool exist(Key k, Container c) {
   return result != c.end();
 }
 
-}
+} //utils_
+
+using namespace utils_;
+
+} //h6ak
 
 #endif //H6AK_CPP_UTILS_HPP
