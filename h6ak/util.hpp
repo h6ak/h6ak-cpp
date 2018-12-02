@@ -9,23 +9,23 @@
 
 namespace h6ak {
 
-namespace utils_ { // to avoid ADL
+namespace util_ { // to avoid ADL
 
 // like Python len function
 template <class T>
-std::size_t len(T obj) { return obj.size(); }
+std::size_t len(T& obj) { return obj.size(); }
 
 // like Python in operator
 // "exist(k, t)" means "k in t" in Python
 template <class Key, class Container>
-bool exist(Key k, Container c) {
+bool exist(const Key& k, const Container& c) {
   auto result = std::find(c.begin(), c.end(), k);
   return result != c.end();
 }
 
-} //utils_
+} //util_
 
-using namespace utils_;
+using namespace util_;
 
 } //h6ak
 
