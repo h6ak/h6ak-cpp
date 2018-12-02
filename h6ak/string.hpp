@@ -16,8 +16,8 @@ template <class T>
 std::string join_str(const std::string& dlm, const T& strings) {
   std::string result;
   for (auto itr = strings.begin(); itr != strings.end(); ++itr) {
+    if (itr != strings.begin()) result.append(dlm);
     result.append(*itr);
-    if (itr != strings.end()) result.append(dlm);
   }
   return result;
 }
