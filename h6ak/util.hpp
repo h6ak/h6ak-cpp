@@ -13,7 +13,7 @@ namespace util_ { // to avoid ADL
 
 // like Python len function
 template <class T>
-std::size_t len(T& obj) { return obj.size(); }
+std::size_t len(const T& obj) { return obj.size(); }
 
 // like Python in operator
 // "exist(k, t)" means "k in t" in Python
